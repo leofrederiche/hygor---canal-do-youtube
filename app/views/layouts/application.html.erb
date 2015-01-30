@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hygor</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><%= link_to "HOME", root_path %></li>
+    <li><a href="https://www.youtube.com/channel/UCalBiDNyB8r4dvWlHT_caKA/videos" target="_blank">VIDEOS</a></li>
+    <li><%= link_to "CONTATO", contact_path %></li>
+  </ul>
+</nav>
+
+<div class="bg-skin">
+</div>
+
+<div class="bg-steve">
+</div>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_for @post, url: new_post_path do |post| %>
+    <%= label_tag "Titulo da postagem" %>
+    <%= post.text_field :title %><br>
+
+    <%= label_tag "Post" %>
+    <%= post.text_area :description %><br>
+
+    <%= post.submit "Enviar" %>
+  <% end %>
+</div>

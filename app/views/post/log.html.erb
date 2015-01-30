@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_for @log, url: log_path do |log| %>
+    <%= label_tag "Nome" %>
+    <%= log.text_field :name %>
+
+    <%= label_tag "Senha" %>
+    <%= log.text_field :password %>
+
+    <%= log.submit "Iniciar" %>
+  <% end %>
+</div>

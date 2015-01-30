@@ -1,0 +1,17 @@
+<div class="videos">
+  <iframe src="//www.youtube.com/embed/b4FfuLmjV1w" frameborder="0" allowfullscreen></iframe>
+
+  <iframe src="//www.youtube.com/embed/sABd_7slMQI" frameborder="0" allowfullscreen></iframe>
+
+  <iframe src="//www.youtube.com/embed/ao27CDTSN3g" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<% @posts.reverse.each do |post| %>
+  <div class="posts">
+  <h1><%= post.title %></h1>
+  <p>
+    <%= post.description %>
+  </p>
+</div>  
+<% end %>
+

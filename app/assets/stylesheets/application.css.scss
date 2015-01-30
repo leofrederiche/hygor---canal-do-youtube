@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+nav{
+  z-index: 10;
+  background-image: image-url("grass_texture2.jpg");
+  background-size: auto 110%;
+  box-shadow: 1px 1px 10px SADDLEBROWN;
+  position: fixed;
+  width: 100%;
+  top: -12px; 
+  padding: 10px;
+  height: 75px;
+  text-align: center;
+}
+
+li{
+  position: relative;
+  top: 45px;
+  list-style: none;
+  display: inline;
+  color: white;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  transition: 0.3s;
+}
+
+li:hover{
+  padding: 20px 40px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ body{
+  margin: 0px;
+  font-family: 'Architects Daughter', cursive;
+ }
+
+ .bg-skin{
+  background-image: image-url("skin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 17vh;
+  height: 35vh;
+  position: fixed;
+  opacity: 0.2;
+  top: 65%;
+  left: 50px;
+ }
+
+ .bg-steve{
+  background-image: image-url("steve.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 28vh;
+  height: 35vh;
+  position: fixed;
+  opacity: 0.2;
+  top: 65%;
+  left: 82%;
+ }
